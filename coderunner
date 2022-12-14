@@ -1,0 +1,17 @@
+public class LightSwitch {
+
+	
+		//True means that the lights are on. False means lights are off.
+		public boolean lightsOn;
+		//Create printInfo method. The method prints "Lights are on", if the lightsOn is true.
+		public void printInfo(){
+		//And if the lightsOn is false, the method prints "Lights are off"
+			if (lightsOn==true) {
+				System.out.println("Lights are on");
+			}else  {
+				System.out.println("Lights are off.");
+			}
+		}
+}
+
+
