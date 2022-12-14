@@ -37,6 +37,16 @@ public class Dimmer extends LightSwitch{
 			//And if the brightness is 0, the method prints:
 			//Lights are off. 
 
+			@Override	
+			public void  printInfo() {
+			
+			if (brightness>0) {
+				System.out.println("Brightness is " + brightness + ".");
+			}else {
+				super.printInfo();
+			}
+				
+			}
 			
 			
 
