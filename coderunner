@@ -13,5 +13,36 @@ public class LightSwitch {
 			}
 		}
 }
+//Create a new class called Dimmer. The class inherits LightSwitch class (lightOn attribute and printInfo method).
+public class Dimmer extends LightSwitch{
+			//The method has one attribute: brightness. The value of the brightness can be 0-100 (int). 
+				int brightness;
+				boolean lightsOn ;
+				
+			
+			//Create method setBrightness. The method has one parameter. Using the parameter, 
+			//...the value of the brightness attribute can be set. Also, if the brightness if 0, set lightsOn to false, otherwise set it to true.
+			public void setBrightness(int brightness){
+				this.brightness=brightness;
+				this.lightsOn=true;
+				if (brightness==0) {
+					lightsOn=false;
+				}else {
+					lightsOn=true;
+				}
+			}
+			//Declare that the printInfo method of the Dimmer class overrides the printInfo method of the LightSwitch class. 
+			//printInfo method of the LightSwitch class prints if the brightness is 50:
+			//Brightness is 50.
+			//And if the brightness is 0, the method prints:
+			//Lights are off. 
+
+			
+			
+
+		
+		
+		
+		}
 
 
